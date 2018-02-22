@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<header>
+  <div class="container">
+    <h1 class="text-center">Planet Cruise</h1>
+  </div>
+</header>
+ <div class="container">
+   <h2 class="text-center">Welcome To Planet Cruise <br>
+     <small>The smartest way to visit the outerspace</small>
+   </h2>
+ </div>
+ <div class="container" style="background-color:skyblue;">
+   <form>
+  First name:<br>
+  <input type="text">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br><br>
+  Depart from: <br>
+  <input type="text" name="Departfrom" placeholder="Earth">
+  <br><br>
+  Going to: <br>
+  <input type="text" name="goingto" placeholder="Mars">
+  <br><br>
+  <script>
+  function clickAlert() {
+    alert("Booking to Mars Successful!!");
+  }
+  </script>
+
+  <input type="submit" onclick="clickAlert()"value="Submit">
+</form>
+</div>
+<div class="container">
+<footer>
+  <p>Planet Cruise 2018</p>
+</footer>
+</div>
+{%endblock%}
